@@ -1,0 +1,8 @@
+# Default code owner para todo el repo.
+# Alumnos del curso: reemplacen @arielsch74 por su username de GitHub.
+* @arielsch74
+
+# Ejemplo por carpeta:
+# /src/ContosoBookstore.Api/Controllers/ @backend-team
+# /src/ContosoBookstore.Api/wwwroot/      @frontend-team
+# /infra/                                 @devops-team

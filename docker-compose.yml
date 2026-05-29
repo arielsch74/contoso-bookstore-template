@@ -1,0 +1,27 @@
+services:
+  api:
+    build: .
+    container_name: contoso-bookstore-api
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=db,1433;Database=ContosoBookstore;User Id=sa;Password=Your_password123;TrustServerCertificate=True"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: contoso-bookstore-db
+    environment:
+      ACCEPT_EULA: "1"
+      MSSQL_SA_PASSWORD: "Your_password123"
+    ports:
+      - "1433:1433"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "Your_password123", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s

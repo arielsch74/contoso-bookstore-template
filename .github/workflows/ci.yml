@@ -1,0 +1,19 @@
+name: CI
+
+# TODO (Fase 2 del integrador): este es un placeholder.
+# Los alumnos lo completan en post-C4 con:
+#   - triggers (push main, pull_request)
+#   - jobs: restore, build, test, publish artifact
+#   - matrix .NET 10 en ubuntu + windows
+#   - docker build + push a ghcr.io
+#
+# Ver guía en STUDENTS.md → Fase 2.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Placeholder workflow — completar en Fase 2 del integrador"

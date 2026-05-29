@@ -1,0 +1,46 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+.vs/
+.vscode/
+.idea/
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+artifacts/
+publish/
+
+# Visual Studio
+.vs/
+*.suo
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Cake / build
+tools/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config (no committear secretos)
+appsettings.Local.json
+*.local.json
+
+# Coverage
+[Cc]overage/
+TestResults/
+*.coverage
+*.coveragexml
+coverage.json
+
+# Logs
+*.log
