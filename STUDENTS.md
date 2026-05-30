@@ -52,6 +52,8 @@
 
 **Objetivo:** sin secrets en pipelines.
 
+> 📖 **Si nunca tocaste Entra ID o WIF:** leé primero el **[WIF Walkthrough](https://github.com/arielsch74/az400-educacionit-81958/blob/main/WIF-WALKTHROUGH.md)** del repo de prep del curso. Cubre la teoría (qué es Entra ID, App Registration, Federated Credential, OIDC), los comandos Azure CLI paso a paso, el workflow YAML mínimo viable, y los 4 errores típicos con cómo diagnosticarlos. ~15 min de lectura, te ahorra 2 horas de "look at this YAML and pray".
+
 - [ ] Service principal con federated credential configurado en Entra ID
 - [ ] Workflow CD usa `azure/login@v2` con `client-id` + `tenant-id` + `subscription-id` (sin client-secret)
 - [ ] `permissions: id-token: write` en el workflow
