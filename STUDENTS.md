@@ -4,13 +4,15 @@
 
 ## Cómo funciona
 
-1. Forkeás este repo a tu cuenta GitHub.
-2. Cada clase del curso aborda conceptos que después aplicás a tu fork.
+1. **NO hagas fork.** Click en el botón verde **"Use this template"** en la página del repo → "Create a new repository". Eso te crea una copia LIMPIA del template en tu cuenta, sin relación upstream con el original (más prolijo para portfolio).
+2. Cada clase del curso aborda conceptos que después aplicás a tu copia.
 3. Vas completando fases entre clases (1 fase por clase aprox).
 4. En C11 (lab integrador) pulís y preparás demo.
 5. En C12 (opcional) demostrás tu trabajo en 8-10 min.
 
 **No es obligatorio.** El curso pasa bien sin esto. Pero si lo terminás, salís con un portfolio piece real para mostrar en entrevistas DevOps.
+
+> 💡 **¿Por qué "Use this template" y no "fork"?** Un fork queda permanentemente linkeado al repo original como upstream — útil para contribuir, ruidoso para portfolio. Un template-based repo es independiente: no aparece "forked from arielsch74/..." en tu repo, queda como proyecto tuyo limpio.
 
 ---
 
