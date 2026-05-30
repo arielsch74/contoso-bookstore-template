@@ -4,7 +4,7 @@ name: CI
 # Los alumnos lo completan en post-C4 con:
 #   - triggers (push main, pull_request)
 #   - jobs: restore, build, test, publish artifact
-#   - matrix .NET 10 en ubuntu + windows
+#   - matrix .NET 8.0 LTS (usar actions/setup-dotnet@v4 con dotnet-version: '8.0.x') en ubuntu + windows
 #   - docker build + push a ghcr.io
 #
 # Ver guía en STUDENTS.md → Fase 2.

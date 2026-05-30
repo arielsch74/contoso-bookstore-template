@@ -5,11 +5,11 @@
 
 ## Stack
 
-- **.NET 10** Web API (controllers) con EF Core
+- **.NET 8 (LTS)** Web API (controllers) con EF Core
 - **DB:** Azure SQL (en producción) · SQL Server Edge (en docker-compose) · InMemory (default si no hay connection string, ideal para `dotnet run` directo)
 - **Front:** vanilla HTML + Bootstrap 5 (servido desde `wwwroot/`) — sin npm, sin build
 - **Containerización:** Dockerfile multi-stage + docker-compose con SQL Edge
-- **OpenAPI:** integrado nativo de .NET 10 (`/openapi/v1.json`)
+- **OpenAPI:** Swashbuckle.AspNetCore (`/swagger`) — en .NET 8 LTS no existe AddOpenApi/MapOpenApi nativo
 - **Tests:** xUnit + `WebApplicationFactory<Program>`
 
 ## Estructura
@@ -41,7 +41,7 @@ cd src/ContosoBookstore.Api
 dotnet run
 ```
 
-Abrir http://localhost:5xxx (la API te muestra el puerto). El frontend Bootstrap está en la raíz; el API en `/api/books`, `/api/authors`, `/api/health`, `/api/config`; OpenAPI en `/openapi/v1.json`.
+Abrir http://localhost:5xxx (la API te muestra el puerto). El frontend Bootstrap está en la raíz; el API en `/api/books`, `/api/authors`, `/api/health`, `/api/config`; OpenAPI en `/swagger/v1/swagger.json (UI en /swagger)`.
 
 ### Opción 2: docker-compose (con SQL Server real)
 

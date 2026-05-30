@@ -33,7 +33,7 @@
 
 **Objetivo:** integración continua funcionando en GitHub Actions Y Azure Pipelines.
 
-- [ ] Workflow GitHub Actions `ci.yml`: triggers `push` + `pull_request`; jobs restore/build/test/publish-artifact; matrix .NET 10 en ubuntu + windows
+- [ ] Workflow GitHub Actions `ci.yml`: triggers `push` + `pull_request`; jobs restore/build/test/publish-artifact; matrix .NET 8 LTS en ubuntu + windows (usar `dotnet-version: '8.0.x'` en actions/setup-dotnet@v4)
 - [ ] Pipeline equivalente en Azure DevOps YAML (`azure-pipelines.yml`)
 - [ ] Docker build + push a GitHub Container Registry (ghcr.io)
 - [ ] Status check del workflow CI configurado en branch protection
